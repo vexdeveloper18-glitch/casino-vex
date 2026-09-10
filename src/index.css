@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+.font-casino {
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Metallic gold gradients and borders */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFE27A 0%, #D4AF37 50%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: #d4af37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25), inset 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+}
+
+.neon-glow-magenta {
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+}
+
+/* Glossy glass casino buttons */
+.btn-gold {
+  background: linear-gradient(180deg, #FDE68A 0%, #F59E0B 40%, #D97706 70%, #92400E 100%);
+  box-shadow: 0 4px 0 #78350F, 0 8px 20px rgba(245, 158, 11, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn-gold:hover:not(:disabled) {
+  background: linear-gradient(180deg, #FEF08A 0%, #FBBF24 40%, #EA580C 80%, #9A3412 100%);
+  box-shadow: 0 4px 0 #78350F, 0 10px 25px rgba(245, 158, 11, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
+}
+
+.btn-gold:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #78350F, 0 4px 10px rgba(245, 158, 11, 0.2);
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 12, 27, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}

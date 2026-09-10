@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plinko Casino</title>
+    <meta name="description" content="A premium casino-style Plinko game with realistic physics, glowing pegs, neon multiplier slots, and game history." />
+    <meta property="og:title" content="Plinko Casino" />
+    <meta property="og:description" content="A premium casino-style Plinko game with realistic physics, glowing pegs, neon multiplier slots, and game history." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+      // Suppress benign browser ResizeObserver notification loop events
+      window.addEventListener('error', function (e) {
+        if (e && e.message && (
+          e.message.indexOf('ResizeObserver loop completed with undelivered notifications') !== -1 ||
+          e.message.indexOf('ResizeObserver loop limit exceeded') !== -1
+        )) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+          return false;
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-[#0b0813] text-white selection:bg-amber-500 selection:text-black overflow-x-hidden antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

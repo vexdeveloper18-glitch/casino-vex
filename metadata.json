@@ -1,0 +1,6 @@
+{
+  "name": "Plinko Casino",
+  "description": "A premium casino-style Plinko game with realistic physics, glowing pegs, neon multiplier slots, and game history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
